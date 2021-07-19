@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/Favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <title>Car Trawler Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <!-- Header   -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg stickytop">
+        <div class="container">
+            <!-- redirect  -->
+            <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Logo" title="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active"> Home </a></li>
+                    <li class="nav-item"><a href="" class="nav-link"> Cars </a></li>
+                    <li class="nav-item"><a href="" class="nav-link"> Vendors </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval=3000">
+                <img src="img/sam-warren-JKsAVzwn9CQ-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-end">
+
+                            <div class="d-none d-md-block col-md-11 col-lg-9 col-xl-8 bg-dark text-right">
+                                <h3 class="pb-3">World's Leading Car Rental Company </h3>
+                                <div class="border-top border-white"></div>
+                                <p class="lead">From all types of rental services to hotel accomodation, we cover it
+                                    all! </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="img/ali-moharami-4LH_Je2-ibw-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/david-von-diemar-2o9oDh62VEk-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row ">
+
+                            <div class="d-none d-md-block col-md-9 col-lg-7 bg-white text-left  ">
+                                <h3 class="pb-3">Around 50+ Car Vendors </h3>
+                                <div class="border-top border-dark "></div>
+                                <p class="lead"> Find the best and the most convinent car vendor for your needs.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- cars -->
+    <div id="social-media-sticky">
+
+        <!-- Start Social Jumbotron -->
+        <div class="jumbotron sticky-top">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="d-none d-xl-block col-xl-6 pt-1 text-light ">
+                        <h3>Featured Cars </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="Car grid">
+            <div class="latest-products">
+                <!-- sorting buttons -->
+                <p> <strong>Sort by: </strong> </p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" onclick="btnSort('EstimatedTotalAmount')"
+                        class="btn btn-secondary">Price</button>
+                    <button type="button" onclick="btnSort('vendorName')" class="btn btn-secondary">Vendors</button>
+                    <button type="button" onclick="btnSort('BaggageQuantity')" class="btn btn-secondary">Baggage
+                        Quantity</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example"> </div>
+
+
+
+
+            </div>
+    </div>
+
+    </div>
+    </section>
+
+
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <p> <strong> <u> Legend </u></strong></p>
+            <tr>
+                <th scope="col">Pick up date: </th>
+                <th scope="col">Location</th>
+                <th scope="col">Return date</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="rental">
+
+            </tr>
+        </tbody>
+
+    </table>
+
+    <table class="table detailed-table">
+
+        <thead id="thead" class="thead-dark">
+            <tr>
+                <th scope="col">Vendor</th>
+                <th scope="col">Status</th>
+                <th scope="col">Car</th>
+                <th scope="col">Vehicle Details </th>
+                <th scope="col">Estimated Price</th>
+                <th scope="col">Car Image</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody id="myData">
+
+        </tbody>
+    </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>Made by <u><a href="https://www.linkedin.com/in/ardendias/" target="_blank">Arden Dias</a></u></p>
+</footer>
+
+
+</html>

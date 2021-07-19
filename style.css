@@ -1,0 +1,179 @@
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+  }
+
+  .navbar-brand img {
+  height: 2.8rem ;
+}
+.navbar {
+  background: linear-gradient(to right, #9cadad, #4b217a);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+}
+ 
+.nav-item {
+  padding: .4rem;
+}
+.nav-link {
+  color: white!important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #bcd03f!important;
+}
+  .col-12 {
+    background: #f8f1e5;
+  }
+  
+  .btn-outline-dark,
+  .btn-outline-dark:hover {
+    color: #426e86;
+  }
+  
+  #text-button-sticky {
+    background-color:   #2f3131;
+  }
+
+  .navbar-toggler {
+    background-color: #bcd03f;
+  }
+  
+  .carousel-inner {
+    max-height: 35rem!important;
+  }
+  
+  .jumbotron {
+    background: linear-gradient(to right, #9cadad, #4b217a)!important;
+  }
+
+
+  /*---Change Carousel Transition Speed --*/ 
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.nav-link.active {
+    transition: transform 2s ease;
+  
+  }
+  .carousel-indicators li {
+  width: 40px;
+  height: 6px;
+  margin-left: 4px;
+  margin-right: 4px ;
+  }
+  
+
+  /*-- Carousel Content --*/
+  .carousel-caption {
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+  } 
+  .bg-dark {
+    background-color: rgba(0, 0, 0, .6)!important;
+    border-radius: 0.8rem;
+    padding: 1rem;
+  }
+  .bg-white {
+    background-color: rgba(49, 47, 47, 0.6)!important;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+
+  .legend-heading {
+    border: 2cm;
+    padding: 2rem;
+    background-color: rgb(163, 185, 185);
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+  }
+
+
+.btn-group{
+  margin-bottom: 2rem;
+}
+.btn-secondary{
+ 
+  color: #000000;
+  background-color: #9cadad;
+  border-color: #020202;
+  border-radius: 1rem;
+  border-width: 0.1cm;
+}
+
+.latest-products {
+  margin-left: 3cm ;
+  margin-top: 0.5cm;
+}
+
+.thead-dark  {
+  margin-left: 3cm;
+  background-color: #9cadad;
+  color: #000000;
+}
+
+.table-striped{
+  color: #ffffff;
+  background-color: #706191;
+  margin-bottom: 1cm;
+}
+
+.detailed-table {
+    color: #ffffff;
+    border-color: #000000;
+    background-color: #706191;
+}
+  
+/* footer */
+footer {
+  text-align: right;
+  padding: 10px;
+  background-color: rgb(75, 72, 72);
+  color: rgb(255, 255, 255);
+}
+footer p {
+  margin: 0cm 1cm;
+}
+
+/* car details page */
+.products {
+margin-top: 1cm ;
+background-color: #c3c7c7;
+}
+
+/* car moving effect */
+
+.img-fluid {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 370px; 
+  
+}
+
+#mainImg {
+  position: absolute;
+  left: -600px;
+  width: 600px;
+  height: 370px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.7s forwards;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
